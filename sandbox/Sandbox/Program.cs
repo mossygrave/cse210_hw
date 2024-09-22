@@ -1,6 +1,9 @@
 using System;
 
 // For refrence this is how comments work 
+/*
+And this is how multi line coments work
+*/
 
 class Program
 {
@@ -43,5 +46,23 @@ class Program
         //moves the number into an int variable
         int num = int.Parse(faveNum);
         //.ToString() converts to a string
+
+        //Loops
+        string response = "yes";
+
+        while (response == "yes")
+        {
+            Console.Write("Do you want to continue? ");
+            response = Console.ReadLine();
+        }
+
+        //do-while loops run once and then check the condition
+        do
+        {
+            Console.Write("Do you want to continue? ");
+            response = Console.ReadLine();
+        } while (response == "yes");
+
+        
     }
 }
