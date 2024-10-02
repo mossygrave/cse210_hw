@@ -1,0 +1,64 @@
+Store a scripture from the user 
+
+Classes:
+Program
+    print the scripture
+    prompt the user to continue or quit
+    quit if the user types quit
+    clear the console when the user presses enter
+
+Scripture
+    hold the verse 
+    acesses the word class to hide individual words
+    acess the refrence class to have the refrence of the scripture
+
+    Methods:
+        HideRandomWords(numberToHide : int): void
+        GetDisplayText() : string
+        IsCompletelyHidden(): bool
+
+    Attributes:
+        _referance : Referance
+        _words : List<Word>
+
+    Constructors: 
+        verse 
+
+Reference 
+    holds the scripture refrence 
+
+    Methods:
+        GetDisplayText() : string
+
+    Attributes:
+        _book : string
+        _chapter : int
+        _verse : int
+        _endVerse : int
+
+    Constructors:
+        book
+        chapter
+        verse
+        endVerse could be N/A
+
+Word
+    acts for each individual word 
+    hides a random word whith a function
+
+    Methods:
+        Hide() : void
+        Show() : void
+        IsHidden() : void
+        GetDisplayText()
+
+    Attributes:
+        hidden : bool
+        text : string
+
+    Constructors:
+        List<Words>
+        numberToHide
+
+
+
