@@ -1,0 +1,63 @@
+Youtube Video Program
+//create 3-4 videos each with 3-4 comments and store them in a list
+//iterate throught he list and display the title author length number of comments (using NumOfComments) and list all the comments for the video.
+Classes:
+    Video
+    Methods:
+        NumOfComments() : int //counts the number of comments on the video
+    Member Variables:
+        private _title : string
+        private _author : string
+        private _length : int
+        private _comments : List<Comments>
+
+    Comment
+    Methods:
+    Member Variables:
+        private _name : string
+        private _text : string
+
+
+
+Product Order Program
+//create two orders with 2-3 products in each of them
+//get the packing label shipping label and total price of the order and display the results
+Classes:
+    Order
+    //hold the list of products and the Customer
+    Methods:
+        OrderTotal() : float //calculate the total cost of the order including shipping using IsUSA() and ProductTotal()
+        PackingLabel() : string //list the name and product id for each product using FullAddress()
+        ShippingLabel() : string //list name and address of the Customer
+        DisplayOrder() : void //display the whole order including all products in order and customer name and address
+    Member Variables:
+        private _products : List<Product> 
+        private _customer : Customer
+
+    Product
+    Methods:
+        ProductTotal() : float //calculate the total cost of a product by multiplying it's price by quantity
+    Member Variables:
+        private _name : string
+        private _id : string
+        private _price : float 
+        private _quantity : int
+
+    Customer
+    Methods:
+        IsUSA() : bool //determines if the customer is located in the USA by calling CheckUSA()
+        ShippingAddress() : string //formats the name and address to return the shipping address using FullAddress()
+    Member Variables:
+        private _name : string
+        private _address : Address
+
+    Address
+    Methods:
+        CheckUSA() : bool //checks the country and returns true if USA
+        FullAddress() : string //returns the whole address including proper spacing and line breaks
+    Member Variables:
+        private _streetAddress : string
+        private _city : string
+        private _state/province : string
+        private _country : string
+
