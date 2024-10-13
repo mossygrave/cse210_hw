@@ -16,10 +16,28 @@ public class Video
             _comments.Add(comment);
         }
     }
-
+    
+    public void DisplayVideo()
+    {
+        Console.WriteLine($"Title: {_title} Author: {_author} Length: {_length}s");
+        Console.WriteLine("Comments: ");
+        foreach (Comment comment in _comments)
+        {
+            Console.WriteLine("");
+            comment.DisplayComment();
+        }
+    }
+    //create a method to count the number of comments
+    
     public int NumOfComments()
     {
-        private int num;
+        int commentsPerVideo = 0;
+        foreach (Comment comment in _comments)
+        {
+            commentsPerVideo += 1;
+        }
+
+        return commentsPerVideo;
     }
 
 }
