@@ -41,10 +41,10 @@ class Program
         comments3.Add(comment8);
         comments3.Add(comment9);
 
-        Video video3 = new Video("Let's  play minecraft", "GameGal54", 1000, comments3);
+        Video video3 = new Video("Let's play minecraft", "GameGal54", 1000, comments3);
 
         videos.Add(video3);
-        
+
         //display all the videos with all the comments 
         foreach (Video video in videos)
         {
