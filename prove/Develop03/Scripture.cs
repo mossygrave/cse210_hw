@@ -1,8 +1,8 @@
 public class Scripture
 {
     string[] words;
-    Referance _referance = new Referance("John", 3, 16);
-    List<Word> _words = new List<Word>();
+    private Referance _referance = new Referance("John", 3, 16);
+    private List<Word> _words = new List<Word>();
     
 
     //create the scripture with referance 
