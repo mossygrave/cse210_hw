@@ -1,0 +1,36 @@
+Classes 
+
+    Program (Main)
+        call all the methods 
+    Goal (Base)
+        basic template for all the types of goals 
+        name : string
+        points for individual goals : int
+        description : string
+        Constructor(str name, int points, )
+    Simple goals (subclass)
+        is complete : bool
+        completed once 
+        give the user a reward
+    Eternal goals (subclass)
+        never completed 
+        can do over and over 
+            count how many time it has been completed
+        give the user a reward
+    Checklist goals 
+        bonus points : int
+        times done : int
+        times needed : int
+        have to be done a number of times 
+        give the user a reward
+    Menu 
+        create the different menus 
+        _goals : List<Goal>
+    Stats 
+        saves the user's score 
+        saves progress
+    Milestones?
+        shows what milestones the user has reached
+        plays animations or something
+        probably could be included in the stats class depending on how complex i want it to be 
+    
